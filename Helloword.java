@@ -1,4 +1,4 @@
-//ini class hello
+//ini class hello baru
 class Helloword
 {
 	public static void main (String[]arg)
