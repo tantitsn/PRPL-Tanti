@@ -39,7 +39,7 @@ public class FrmSplash extends javax.swing.JDialog {
         initComponents();
         this.add(Loading);
         dbKon = new ConectionDB();
-        dbKon.openConnection();
+        dbKon.openConnection("db_pbo","root","");
         
         Loading.setVisible(false);
         setTimerSplash(50);

@@ -15,12 +15,12 @@ import java.sql.SQLException;
  */
 public class ConectionDB {
 Connection con;
-public void openConnection()
+public void openConnection(String db, String user, String pass)
     {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             this.con = DriverManager.getConnection("jdbc:mysql://" +
-                    "localhost:3306/db_pbo","root","");
+                    "localhost:3306/"+db,user,pass);
             System.out.println("koneksi berhasil");
         } catch (ClassNotFoundException ex) {
             ex.printStackTrace();

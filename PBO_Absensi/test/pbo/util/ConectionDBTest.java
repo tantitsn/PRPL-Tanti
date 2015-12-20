@@ -43,10 +43,13 @@ public class ConectionDBTest {
     @Test
     public void testOpenConnection() {
         System.out.println("openConnection");
+        String db = "db_pbo";
+        String user = "root";
+        String pass = "";
         ConectionDB instance = new ConectionDB();
-        instance.openConnection();
+        instance.openConnection(db, user, pass);
         // TODO review the generated test code and remove the default call to fail.
-     
+      
     }
     
 }
