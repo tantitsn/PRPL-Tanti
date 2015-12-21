@@ -47,8 +47,8 @@ public class TestMethodTest {
     @Test
     public void testTglToDMY() {
         System.out.println("tglToDMY");
-        String tglAsal = "2013-09-15";
-        String expResult = "15 September 2013";
+        String tglAsal = "2015-12-15";
+        String expResult = "15 Desember 2015";
         String result = TestMethod.tglToDMY(tglAsal);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.

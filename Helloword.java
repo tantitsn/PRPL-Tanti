@@ -6,3 +6,4 @@ class Helloword
 		System.out.println("Hello Word !");
 	}
 }
+// baru
